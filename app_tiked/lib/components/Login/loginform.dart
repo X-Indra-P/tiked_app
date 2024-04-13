@@ -3,6 +3,7 @@ import 'dart:html';
 import 'package:app_tiked/components/custom_surfix_icon.dart';
 import 'package:app_tiked/components/default_button_custome_color.dart';
 import 'package:app_tiked/screens/Register/register.dart';
+import 'package:app_tiked/screens/User/homeuserscreen.dart';
 import 'package:app_tiked/size_config.dart';
 import 'package:app_tiked/utils/constants.dart';
 import 'package:flutter/cupertino.dart';
@@ -61,7 +62,9 @@ class _SinginFormState extends State<SinginForm> {
             DefaultButtonCustomeColor(
               color: kPrimaryColor,
               text: "SingIn",
-              press: () {},
+              press: () {
+                Navigator.pushNamed(context, HomeUserScreen.routeName);
+              },
 
             ),
             SizedBox(height: 20,
